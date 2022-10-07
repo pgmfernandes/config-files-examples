@@ -1,0 +1,14 @@
+{
+  "sast":{
+    "enabled": true,
+    "snyk": true,
+    "trivy": false,
+    "sonar": true
+  },
+  "secret":{
+    "enabled": true,
+    "gitleaks": true,
+    "semgrep": false,
+    "trivy": true
+  }, 
+}
