@@ -1,0 +1,16 @@
+{
+  "org": "pgmfernandes",
+  "name": "using-custom-python-action",
+  "sast":{
+    "enabled": true,
+    "snyk": true,
+    "trivy": false,
+    "sonar": true
+  },
+  "secret":{
+    "enabled": true,
+    "gitleaks": true,
+    "semgrep": false,
+    "trivy": true
+  }
+}
