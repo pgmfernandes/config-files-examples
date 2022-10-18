@@ -1,16 +1,37 @@
 {
-  "org": "pgmfernandes",
-  "name": "using-custom-python-action",
-  "sast":{
-    "enabled": true,
-    "snyk": true,
-    "trivy": false,
-    "sonar": true
-  },
-  "secret":{
-    "enabled": true,
-    "gitleaks": true,
-    "semgrep": false,
-    "trivy": true
-  }
+    "repository": {
+      "name": "using-custom-python-action",
+      "organization": "pgmfernandes",
+      "archived": false,
+      "public": false,
+      "previous_names": []
+    },
+    "config": {
+      "sast_snyk": {
+        "enabled": true,
+        "custom_payload": {
+          "threshold": "high",
+          "organization": "paulagmf"
+        },
+        "exception": null
+      },
+      "sast_trivy": {
+        "enabled": true,
+        "custom_payload": {
+          "threshold": "medium"
+        },
+        "exception": {
+          "from": "2022-10-10",
+          "to": "2022-10-10",
+          "reason": "2022-10-10"
+        }
+      },
+      "secret_gitleaks": {
+        "enabled": true,
+        "custom_payload": {},
+        "exception": null
+      }
+    },
+    "history": []
 }
+
