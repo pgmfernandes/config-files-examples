@@ -1,6 +1,6 @@
 {
     "repository": {
-      "name": "using-custom-python-action",
+      "name": "abc",
       "organization": "pgmfernandes",
       "archived": false,
       "public": false,
@@ -11,14 +11,16 @@
         "enabled": true,
         "custom_payload": {
           "threshold": "high",
-          "organization": "paulagmf"
+          "organization": "paulagmf",
+          "prescript": ["echo 'executing before analysis'", "export MY_HOME=/home/test"]
         },
         "exception": null
       },
       "sast_trivy": {
         "enabled": true,
         "custom_payload": {
-          "threshold": "medium"
+          "threshold": "high",
+          "organization": "paulagmf"
         },
         "exception": {
           "from": "2022-10-10",
@@ -34,4 +36,3 @@
     },
     "history": []
 }
-
