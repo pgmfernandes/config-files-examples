@@ -8,7 +8,6 @@
     },
     "config": {
       "sast_snyk": {
-        "enabled": true,
         "custom_payload": {
           "threshold": "high",
           "organization": "paulagmf",
@@ -17,7 +16,6 @@
         "exception": null
       },
       "sast_trivy": {
-        "enabled": true,
         "custom_payload": {
           "threshold": "high",
           "organization": "paulagmf"
@@ -28,27 +26,19 @@
           "reason": "2022-10-10"
         }
       },
-      "secret_gitleaks": {
-        "enabled": true,
-        "custom_payload": {
-                "SEMGREP_CHECK": true
-        },
-        "exception": null
-      },
         "secret_scan_gitleaks": {
-          "enabled": true,
           "custom_payload": {
                 "GITLEAKS_CHECK": true
           },
           "exception": null
         },
         "secret_scan_semgrep": {
-            "enabled": true,
-            "custom_payload": {},
+            "custom_payload": {
+                "SEMGREP_CHECK": true
+            },
             "exception": null
         },
         "secret_scan_trivy": {
-            "enabled": true,
             "custom_payload": {},
             "exception": null
         }
