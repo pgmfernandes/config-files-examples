@@ -30,12 +30,16 @@
       },
       "secret_gitleaks": {
         "enabled": true,
-        "custom_payload": {},
+        "custom_payload": {
+                "SEMGREP_CHECK": true
+        },
         "exception": null
       },
         "secret_scan_gitleaks": {
           "enabled": true,
-          "custom_payload": {},
+          "custom_payload": {
+                "GITLEAKS_CHECK": true
+          },
           "exception": null
         },
         "secret_scan_semgrep": {
